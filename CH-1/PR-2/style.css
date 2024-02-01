@@ -1,0 +1,10 @@
+student
+{
+    background-color: bisque;
+}
+
+firstname,lastname,email
+{
+    font-size: 25px;
+    display: block;
+}

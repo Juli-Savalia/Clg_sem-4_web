@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prepend</title>
+</head>
+
+<body>
+
+    <button type="button">'Insert text</button>
+    <div id="container">
+        <p>Jquery is a lightweight "write less do more" javascript library file.</p>
+        <p>jquery takes a lot of common tasks that require many lines of javascript code to accomplish and wrap them into a method that you can call whenever required..</p>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").prepend("<strong>Note:- </strong>");
+            $("button").click(function () {
+                $("#container").prepend("This is the example of jquery prepend method..");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade effect</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <section class="p-50">
+        <div class="container">
+            <div class="d-flex">
+                <button id="fadeIn" class="btn1">FadeIn</button>
+                <button id="fadeOut" class="btn1">fadeOut</button>
+                <button id="fadeToggle" class="btn1">fadeToggle</button>
+                <button id="fadeTo" class="btn1">fadeTo</button>
+            </div>
+            <div class="box">
+                <img src="pexels-vietrov-19545978.jpg" alt="" class="img"><div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fadeIn").click(function(){
+                $(".box").fadeIn(1000,"swing");
+            });
+
+            $("#fadeOut").dblclick(function(){
+                $(".box").fadeOut(1000,"swing");
+            });
+
+            $("#fadeToggle").mouseenter(function(){
+                $(".box").fadeToggle(1000,"linear");
+            });
+
+            $("#fadeTo").mouseover(function(){
+                $(".box").fadeTo(2000,0.5);
+            });
+        });
+    </script>
+</body>
+</html>

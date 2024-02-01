@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display effect</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <section class="p-50">
+        <div class="container">
+            <div class="d-flex">
+                <button id="hide" class="btn1">Hide</button>
+                <button id="show" class="btn1">Show</button>
+                <button id="toggle" class="btn1">Toggle</button>
+            </div>
+            <div class="box">
+                <img src="pexels-vietrov-19545978.jpg" alt="" class="img"><div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $(".box").hide();
+            });
+
+            $("#show").dblclick(function(){
+                $(".box").show();
+            });
+
+            $("#toggle").mouseenter(function(){
+                $(".box").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

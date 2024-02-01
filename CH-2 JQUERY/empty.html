@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empty</title>
+    <style>
+        .container {
+            padding: 10px;
+            background-color: rgb(249, 252, 243);
+            border: 2px double black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>HELLO JULI SAVALIA...</h1>
+        <div class="hint">
+            <strong>Note:</strong>
+            If you click following btn it will remove all the comntents of the container div including btn
+        </div>
+        <br>
+        <br>
+        <button type="button">Empty container</button>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".container").empty();
+            });
+        });
+    </script>
+</body>
+
+</html>

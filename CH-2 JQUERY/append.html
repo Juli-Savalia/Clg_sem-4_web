@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>INSERTING HTML CONTENT AT THE END OF THE ELEMENTS IN JQUERY......</h2>
+    <br><br><br>
+    <hr>
+
+    <button type="button">Insert Text</button>
+    <div id="container"></div>
+    <p>jquery is a light weight "write less do more" javascript library....</p>
+    <p>jquery takes a lot of common tasks that requires many lines of javascript code to accomplish and wraps them into a method that you can call with a single line of code......</p>
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $("p").append('<a href="#">Read more .. </a>');
+
+            $("button").click(function(){
+
+                $("#container").append("This is example of an jquery append method...");
+
+            });
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr-2</title>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quas reiciendis. Pariatur ipsa assumenda eveniet
+        cumque fuga ex minus explicabo aspernatur facere quis adipisci consequuntur suscipit molestiae, error placeat!
+        Ipsa ut labore dolorum, ea aliquam pariatur, sequi reiciendis asperiores reprehenderit quasi amet perferendis,
+        voluptate officia explicabo numquam corrupti laborum! Ab.</p>
+    <button>
+        click me!!
+    </button>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").css("padding", "10px 20px")
+            $("button").css("background-color", "lightgreen")
+            $("button").css("color", "black")
+            $("button").css("outline", "none")
+            $("button").css("border", "none")
+            $("button").click(function () {
+
+                alert("You have clicked the button...")
+                $("button").css("padding", "10px 20px")
+                $("button").css("background-color", "lightpink")
+                $("button").css("color", "black")
+                $("button").css("outline", "none")
+                $("button").css("border", "none")
+            })
+        })
+    </script>
+</body>
+
+</html>

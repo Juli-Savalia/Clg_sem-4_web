@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide effect</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <section class="p-50">
+        <div class="container">
+            <div class="d-flex">
+                <button id="slideUp" class="btn1">slideUp</button>
+                <button id="slideDown" class="btn1">slideDown</button>
+                <button id="slideToggle" class="btn1">slideToggle</button>
+            </div>
+            <div class="box">
+                <img src="pexels-vietrov-19545978.jpg" alt="" class="img"><div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#slideUp").click(function(){
+                $(".box").slideUp(1000,"swing");
+            });
+
+            $("#slideDown").dblclick(function(){
+                $(".box").slideDown(1000,"swing");
+            });
+
+            $("#slideToggle").mouseenter(function(){
+                $(".box").slideToggle(1000,"linear");
+            });
+        });
+    </script>
+</body>
+</html>
