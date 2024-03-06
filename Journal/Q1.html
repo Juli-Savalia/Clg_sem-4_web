@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image - slide</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button{
+            display: block;
+            margin:30px auto;
+        }
+         img{
+            width: 100%;
+            height:80%;
+         }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="d-flex">
+                <div class="img">
+                    <button id="btn1">Slide up</button>
+                    <img src="pexels-annasorohanph-20183407.jpg" alt=""  id="up">
+                </div>
+                <div class="img ">
+                    <button id="btn2">Slide down</button>
+                    <img src="pexels-jakob-jin-18064898.jpg" alt="" id="down" class="d-none">
+                </div>
+                <div class="img ">
+                    <button id="btn3">Slide Toggle</button>
+                    <img src="pexels-cami-20270869.jpg" alt=""  id="toggle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $( "#up" ).slideUp('slow');
+            });
+
+            $('#btn2').click(function(){
+                $( "#down" ).slideDown('slow');
+            });
+
+            $('#btn3').click(function(){
+                $( "#toggle" ).slideToggle('slow');
+            });
+        });
+    </script>
+</body>
+</html>

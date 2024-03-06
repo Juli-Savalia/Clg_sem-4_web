@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text - display</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button{
+            margin:50px 0;
+            padding: 10px 20px;
+            background-color: antiquewhite;
+            border: none;
+            cursor: pointe;;
+        }
+        img {
+            width: 100%;
+            height: 80%;
+        }
+        #displayText{
+            padding: 50px;
+            border:1px doubled black;
+            background-color:antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="d-flex justify-between">
+                <button id="btn1">hide</button>
+                <button id="btn2">show</button>
+                <button id="btn3">toggle</button>
+            </div>
+            <p id="displayText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae in recusandae ut odit vel, reprehenderit id adipisci ipsa fugiat quos tempore incidunt minus animi tenetur sed aspernatur. Praesentium maiores odit ipsam. Magni quo, tenetur repudiandae id error odio debitis maxime! Neque natus perferendis nisi! Consectetur tempore nisi dolores ducimus, quasi earum. Error iusto maxime vel! Dolorem quo reiciendis illum consequatur provident, officia modi molestiae ullam incidunt quibusdam? Distinctio fugiat assumenda ex error praesentium aliquam, explicabo odit quam libero omnis veniam delectus eius officiis neque a, optio vero reprehenderit aliquid? Minima earum vero cumque sunt facere ipsa optio dolor officiis iste?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque modi alias repellat ipsa, ratione repellendus rem aspernatur quas corrupti sed eius delectus quos libero est, unde dignissimos, laboriosam necessitatibus nihil! Deleniti ipsum perferendis veritatis ut mollitia natus nisi reprehenderit sapiente et iusto ea dignissimos quia repudiandae suscipit, quas eos nemo est ratione corporis voluptas nam tempora laborum autem! Cum ipsum laudantium fugit ducimus optio beatae deserunt quae nulla explicabo! Suscipit repellat nesciunt ut. Nesciunt, perferendis rerum, temporibus culpa laborum pariatur iste, impedit in facilis nihil at ullam necessitatibus debitis? Officia ducimus explicabo natus quas et, temporibus maiores omnis dolore numquam consequuntur optio asperiores sunt laboriosam pariatur. Nisi perspiciatis quibusdam ab, aperiam temporibus laborum tenetur quasi fugit quos, hic delectus. Molestiae et qui numquam voluptatem adipisci, cupiditate provident accusamus libero minima fuga minus quia itaque suscipit incidunt nostrum! Iste doloremque, nam adipisci aut quae distinctio dolorem voluptates. Cupiditate dicta officia id, ratione possimus vel praesentium exercitationem molestiae quidem! Consequatur iste nostrum, quae non placeat soluta beatae porro repellendus possimus eligendi eius mollitia aspernatur tenetur necessitatibus maxime dolorum, quo voluptatibus numquam recusandae laboriosam enim officiis nam amet. Cum, voluptatum? Dignissimos doloremque, incidunt quaerat ratione impedit maxime error. Qui asperiores repudiandae non fuga!
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                $("#displayText").hide('slow');
+            });
+
+            $('#btn2').click(function () {
+                $("#displayText").show('slow');
+            });
+
+            $('#btn3').click(function () {
+                $("#displayText").toggle('slow');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: antiquewhite;
+
+        }
+        .calc{
+            /* height: 500px; */
+            background-color: white;
+            box-shadow:6px 8px 20px 0px #767575;
+            width: 30%;
+            margin: 50px 0;
+            border-radius: 30px;
+            padding: 60px 20px;
+        }
+        input{
+            background-color: rgb(96, 149, 236);
+            outline: none;
+            padding: 20px 0;
+            width: 100%;
+            border: none;
+            border-radius: 50px;
+        }
+        .mtb-30{
+            margin: 30px 0;
+        }
+        .btndiv1 button{
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;;
+            border: none;
+            box-shadow:2px 3px 4px 0px #767575;
+            color: grey;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .btndiv1 button:last-child{
+            background-color: rgb(42, 42, 88);
+            color: white;
+        }
+        .btndiv2 button{
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            background-color: rgb(216, 216, 216);
+            border: none;
+            box-shadow:2px 3px 4px 0px #767575;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .btndiv2 button:last-child{
+            background-color: rgb(243, 61, 61);
+            color: white;
+        }
+        .btndiv3 button{
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;;
+            border: none;
+            background-color: rgb(216, 216, 216);
+            box-shadow:2px 3px 4px 0px #767575;
+            color: rgb(54, 54, 54);
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .btndiv3 button:last-child{
+            background-color: rgb(100, 188, 226);
+            color: white;
+        }
+        .btndiv4 button{
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;;
+            border: none;
+            box-shadow:2px 3px 4px 0px #767575;
+            background-color: rgb(216, 216, 216);
+            color: rgb(54, 54, 54);
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .btndiv4 button:last-child{
+            background-color: rgba(242, 242, 13, 0.964);
+            color: white;
+        }
+        .btndiv5 button{
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            background-color: rgb(216, 216, 216);
+            border: none;
+            box-shadow:2px 3px 4px 0px #767575;
+            color: rgb(54, 54, 54);
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .btndiv5 button:last-child{
+            background-color: rgb(30, 206, 77);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="d-flex justify-center">
+                <div class="calc">
+                    <div>
+                        <input type="number">
+                    </div>
+                    <div class="btndiv1 d-flex justify-evenly mtb-30">
+                        <button type="button">%</button>
+                        <button type="button">^</button>
+                        <button type="button">$</button>
+                        <button type="button">CE</button>
+                    </div>
+                    <div class="btndiv2 d-flex justify-evenly mtb-30">
+                        <button type="button">7</button>
+                        <button type="button">8</button>
+                        <button type="button">9</button>
+                        <button type="button">-</button>
+                    </div>
+                    <div class="btndiv3 d-flex justify-evenly mtb-30">
+                        <button type="button">4</button>
+                        <button type="button">5</button>
+                        <button type="button">6</button>
+                        <button type="button">/</button>
+                    </div>
+                    <div class="btndiv4 d-flex justify-evenly mtb-30">
+                        <button type="button">1</button>
+                        <button type="button">2</button>
+                        <button type="button">3</button>
+                        <button type="button">x</button>
+                    </div>
+                    <div class="btndiv5 d-flex justify-evenly mtb-30">
+                        <button type="button">.</button>
+                        <button type="button">0</button>
+                        <button type="button">=</button>
+                        <button type="button">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
